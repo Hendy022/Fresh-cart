@@ -13,8 +13,9 @@ export default function Brands() {
   }, []);
 
   return (
-    <div>
-      <h2>Brands</h2>
+    
+    <div className='p-6'>
+      <h2 className='mb-4'>Brands</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {brands.map(brand => (
           <Link to={`/products/brand/${brand._id}`} key={brand._id} className="border p-2 rounded block text-center">

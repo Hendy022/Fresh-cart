@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className="fixed bg-white dark:bg-gray-800   shadow inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between px-6 py-3 lg:px-8" aria-label="Global">
         <div className="flex me-6">
-          <NavLink to={''} className="-m-1.5 p-1.5 dark:bg-gray-400 dark:rounded">
+          <NavLink to={''} className="-m-1.5 p-1.5 dark:bg-gray-500 dark:rounded">
             <span className="sr-only">Your Company</span>
             <img className="w-28" src={logo} alt="" />
           </NavLink>

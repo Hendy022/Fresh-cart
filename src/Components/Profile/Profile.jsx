@@ -57,7 +57,7 @@ export default function Profile() {
   if (loading) return <Loading />;
 
   return (
-    <div className="md:w-1/2 mx-auto mt-8">
+    <div className="md:w-1/2 pt-5 space-y-4 space-x-4 mx-auto mt-8">
       <h2>User Profile</h2>
       {error && <div className="text-red-500 mb-2">{error}</div>}
       {message && <div className="text-green-500 mb-2">{message}</div>}
@@ -65,7 +65,7 @@ export default function Profile() {
         <form onSubmit={handleUpdate}>
           <input name="name" value={form.name} onChange={handleChange} className="block w-full mb-4 p-2 border rounded" />
           <input name="email" value={form.email} onChange={handleChange} className="block w-full mb-4 p-2 border rounded" />
-          <button type="submit" className="bg-main text-white px-4 py-2 rounded" disabled={saving}>{saving ? 'Saving...' : 'Save'}</button>
+          <button type="submit" className="bg-main text-white px-3 py-2 rounded" disabled={saving}>{saving ? 'Saving...' : 'Save'}</button>
           <button type="button" onClick={() => setEdit(false)} className="ml-2 px-4 py-2 rounded border">Cancel</button>
         </form>
       ) : (

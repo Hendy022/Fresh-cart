@@ -33,9 +33,9 @@ export default function Wishlist() {
   if (loading) return <Loading />;
 
   return (
-    <div>
-      <h2>My Wishlist</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className='p-6'>
+      <h2 className='mb-4'>My Wishlist</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6  gap-4">
         {wishlist.map(product => (
           <ProductCard
             key={product._id}

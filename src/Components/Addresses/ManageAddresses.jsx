@@ -91,8 +91,8 @@ export default function ManageAddresses() {
   if (loading) return <Loading />;
 
   return (
-    <div className="md:w-1/2 mx-auto mt-8">
-      <h2>Manage Addresses</h2>
+    <div className="md:w-1/2 mx-auto p-5 mt-8">
+      <h2 className='mb-4'>Manage Addresses</h2>
       {error && <div className="text-red-500 mb-2">{error}</div>}
       {message && <div className="text-green-500 mb-2">{message}</div>}
       <form onSubmit={handleSubmit} className="mb-4">

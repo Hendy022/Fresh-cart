@@ -1,11 +1,11 @@
 import React from 'react'
 import style from './NotFound.module.css'
 
+import errImage from '../../assets/images/error.svg'
 export default function NotFound() {
 
-  return <>
+  return <div className='flex justify-center items-center pt-6'>
     
-    <h2>NotFound</h2>
-  
-  </>
+    <img src={errImage} className='text-center' alt="" />
+  </div>
 }

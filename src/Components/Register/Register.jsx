@@ -55,9 +55,10 @@ export default function Register() {
 
   return <>
 
-    <div>
-      <h2>Register</h2>
-      <form onSubmit={formik.handleSubmit} className="md:w-1/2 mx-auto">
+    <div className='pt-10'>
+      <form onSubmit={formik.handleSubmit} className="md:w-1/2 mx-auto p-3 bg-white dark:bg-transparent rounded-lg ">
+        <h2 className='py-4'>Register</h2>
+
         {apiError && <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
           {apiError}
         </div>}

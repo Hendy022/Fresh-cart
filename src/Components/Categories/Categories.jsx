@@ -13,8 +13,9 @@ export default function Categories() {
   }, []);
 
   return (
-    <div>
-      <h2>Categories</h2>
+    
+    <div className='p-6'>
+      <h2 className='mb-4'>Categories</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {categories.map(category => (
           <Link to={`/products/category/${category._id}`} key={category._id} className="border p-2 rounded block text-center">
